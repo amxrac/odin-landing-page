@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 .padding_l_and_r {
-    padding: 25px 160px;
+    padding: 0 160px;
 }
 
 .container {
@@ -18,12 +18,14 @@
     flex-direction: column;
 }
 
-header {
+.header {
     background: hsl(215, 28%, 17%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 header h5 {
@@ -41,7 +43,90 @@ header ul {
 
 header ul a {
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
+    color: hsl(220, 13%, 91%);
     padding-right: 30px;
     font-size: 18px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: hsl(215, 28%, 17%);
+    gap: 30px;
+}
+
+main .left {
+    flex: 1;
+}
+
+main .left h4 {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+main .left p {
+    color: hsl(220, 13%, 91%);
+    margin-bottom: 15px;
+}
+
+main .left button {
+    border-radius: 5px;
+    background: hsl(217, 91%, 59%);
+    color: hsl(0, 0%, 100%);
+    padding: 5px 20px;
+    border: none;
+}
+
+main .right {
+    flex: 1; 
+    background: hsl(218, 5%, 41%);  
+    padding: 80px 25px;
+}
+
+main .right p {
+    color: hsl(220, 13%, 91%);
+    text-align: center;
+}
+
+.info {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: hsl(0, 0%, 100%);
+    width: 100vw;
+    text-align: center;
+}
+
+.info h4 {
+    font-weight: 700;
+    font-size: 36px;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 30px;
+}
+
+.info_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info_section .info_section_subtext {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.info_section .info_section_subtext div {
+    border: 4px solid hsl(217, 91%, 59%);
+    padding: 130px 15px;
+    border-radius: 20px;
+}
+
+.info_section .info_section_subtext p {
+    color: hsl(218, 5%, 41%);
 }

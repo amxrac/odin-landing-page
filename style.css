@@ -161,7 +161,51 @@ main .right p {
 .quote p:nth-child(2) {
     font-weight: 700;
     color: hsl(215, 28%, 17%);
-    /* margin-left: 10px; */
     align-self: flex-end;
-    /* width: 20vw; */
+}
+
+.cta {
+    background: hsl(0, 0%, 100%);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cta_text {
+    background: hsl(217, 91%, 59%);
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 85px;
+    border-radius: 10px;
+}
+
+.cta_text p:first-child {
+    font-weight: 700;
+    color: hsl(90, 17%, 98%);
+}
+
+.cta_text p:nth-child(2) {
+    color: hsl(220, 13%, 91%);
+}
+
+.cta_text button  {
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: none;
+    color: hsl(90, 17%, 98%);
+    font-weight: 700;
+}
+
+footer {
+    width: 100vw;
+    background: hsl(215, 28%, 17%);
+    text-align: center;
+    padding: 20px 0;
+    color: hsl(220, 13%, 91%);
 }
